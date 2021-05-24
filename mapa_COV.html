@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cb9666d7879047b4af2eaf2f29b39edd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cb9666d7879047b4af2eaf2f29b39edd" ></div>
+        
+</body>
+<script>    
+    
+            var map_cb9666d7879047b4af2eaf2f29b39edd = L.map(
+                "map_cb9666d7879047b4af2eaf2f29b39edd",
+                {
+                    center: [40.4167, -3.70325],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78da6ee487994db0a08cdb4c93dc88fa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cb9666d7879047b4af2eaf2f29b39edd);
+        
+    
+            var circle_197778556ba542c4a5a5998b5456253e = L.circle(
+                [40.420000000000066, -3.7491669999999644],
+                {"bubblingMouseEvents": true, "color": "#6FBD3B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6FBD3B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 607.9326359749548, "stroke": true, "weight": 3}
+            ).addTo(map_cb9666d7879047b4af2eaf2f29b39edd);
+        
+    
+        var popup_421d73d454584f20a94afcd5183351de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9a727793e7645389bae68bd853a1fb9 = $(`<div id="html_d9a727793e7645389bae68bd853a1fb9" style="width: 100.0%; height: 100.0%;">Casa de Campo</div>`)[0];
+            popup_421d73d454584f20a94afcd5183351de.setContent(html_d9a727793e7645389bae68bd853a1fb9);
+        
+
+        circle_197778556ba542c4a5a5998b5456253e.bindPopup(popup_421d73d454584f20a94afcd5183351de)
+        ;
+
+        
+    
+    
+            var circle_9ddd29d81d1f4a90a4f2cc14ddec93dd = L.circle(
+                [40.42166700000012, -3.6822219999999963],
+                {"bubblingMouseEvents": true, "color": "#e19255", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e19255", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800.0, "stroke": true, "weight": 3}
+            ).addTo(map_cb9666d7879047b4af2eaf2f29b39edd);
+        
+    
+        var popup_0ae860e01b2e4f60b6d268f7aef0125c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4195c17b3b604770b045c11a1acd3e3b = $(`<div id="html_4195c17b3b604770b045c11a1acd3e3b" style="width: 100.0%; height: 100.0%;">Escuelas Aguirre</div>`)[0];
+            popup_0ae860e01b2e4f60b6d268f7aef0125c.setContent(html_4195c17b3b604770b045c11a1acd3e3b);
+        
+
+        circle_9ddd29d81d1f4a90a4f2cc14ddec93dd.bindPopup(popup_0ae860e01b2e4f60b6d268f7aef0125c)
+        ;
+
+        
+    
+    
+            var circle_cb6eee15c48b45ef8c33ee825997d0a2 = L.circle(
+                [40.462499999999764, -3.580555999999981],
+                {"bubblingMouseEvents": true, "color": "#e19255", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e19255", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 744.4777150068762, "stroke": true, "weight": 3}
+            ).addTo(map_cb9666d7879047b4af2eaf2f29b39edd);
+        
+    
+        var popup_fc475910e4704417966ec50086715bff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aaa9c2ba60e447fab32e37b1d1a4cfc0 = $(`<div id="html_aaa9c2ba60e447fab32e37b1d1a4cfc0" style="width: 100.0%; height: 100.0%;">Urb. Embajada</div>`)[0];
+            popup_fc475910e4704417966ec50086715bff.setContent(html_aaa9c2ba60e447fab32e37b1d1a4cfc0);
+        
+
+        circle_cb6eee15c48b45ef8c33ee825997d0a2.bindPopup(popup_fc475910e4704417966ec50086715bff)
+        ;
+
+        
+    
+</script>
